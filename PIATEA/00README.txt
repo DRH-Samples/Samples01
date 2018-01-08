@@ -1,0 +1,1 @@
+This directory contains various scripts and other files developed for an experimental system that integrates diverse data, including genomic data and the output of other programs, using hidden Markov Models, into a set of probabilistic TE predictions.

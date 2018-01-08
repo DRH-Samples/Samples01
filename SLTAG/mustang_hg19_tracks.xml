@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Created 11-08-14 -->
+
+<teModelConfig>
+<track name="repeat_modeler"    path="/data/douglas.hoen/piatea/genomes/human/hg19/tracks/repeatmodeler/hg19_repeatmodeler.bed"     distribution="binary"/>
+<track name="dustmasker"        path="/data/douglas.hoen/piatea/genomes/human/hg19/tracks/dustmasker/hg19_dustmasker.bb"            distribution="binary"/>
+<track name="windowmasker"      path="/data/douglas.hoen/piatea/genomes/human/hg19/tracks/windowmasker/hg19_windowmasker.bb"        distribution="binary"/>
+<track name="tantan"            path="/data/douglas.hoen/piatea/genomes/human/hg19/tracks/tantan/hg19_tantan.bed"                   distribution="binary"/>
+<track name="transposonpsi"     path="/data/douglas.hoen/piatea/genomes/human/hg19/tracks/transposonpsi/hg19_transposonpsi.bed"     distribution="binary"/>
+
+<!-- Note: Tried and failed: IRF, MITE-Hunter -->
+</teModelConfig>

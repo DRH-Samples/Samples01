@@ -1,0 +1,28 @@
+@relation /data/glenn.hickey/genomes/alyrata/experiments/paper/hmm_params/hmmTracks.xml
+
+@attribute chromosome   string
+@attribute position     real
+
+@attribute repeat_modeler {None, DNA, LINE, LTR, SINE, Unknown, Simple, Low}
+@attribute ltr_finder   {None, inside, LTR|left, LTR|right, TSD|left, TSD|right}
+@attribute ltr_harvest  {None, inside, LTR|left, LTR|right, TSD|left, TSD|right}
+@attribute irf          {None, left, right}
+@attribute mitehunter   {0 1}
+@attribute helitronscanner {0 1}
+@attribute fgenesh      {exon, intergenic, intron, None}
+@attribute mrna         real
+@attribute srna         real
+@attribute ortho_depth  real
+@attribute gcpct        real
+% @attribute trf          {0 1}   % Not dumped (presumably b/c flagged as masked)
+@attribute windowmasker {0 1}
+% @attribute polyN        {0 1}   % Not dumped (presumably b/c flagged as masked)
+@attribute ltr_termini  {None, L_Term, R_Term}
+@attribute tir_termini  {None, L_Term, R_Term}
+@attribute palindrome   {None, L_Term, R_Term}
+@attribute overlap      {None, L_Term, R_Term}
+@attribute cov_80-      real
+@attribute cov_80-90    real
+@attribute cov_90+      real
+
+@data

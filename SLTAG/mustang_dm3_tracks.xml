@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Created 11-08-14 -->
+
+<teModelConfig>
+<track name="dustmasker"        path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/dustmasker/dm3_dustmasker.bb"         distribution="binary"/>
+<track name="repeat_modeler"    path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/repeatmodeler/dm3_repeatmodeler.bed"  distribution="binary"/>
+<track name="irf"               path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/irf/dm3_irf.bed"                      distribution="binary"/>
+<track name="mitehunter"        path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/irf/dm3_mitehunter.bed"               distribution="binary"/>
+<track name="transposonpsi"     path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/transposonpsi/dm3_transposonpsi.bed"  distribution="binary"/>
+<track name="windowmasker"      path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/windowmasker/dm3_windowmasker.bed"    distribution="binary"/>
+<track name="tantan"            path="/data/douglas.hoen/piatea/genomes/drosophila/tracks/tantan/dm3_tantan.bed"                distribution="binary"/>
+
+</teModelConfig>

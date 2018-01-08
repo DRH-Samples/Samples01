@@ -1,0 +1,104 @@
+@relation /data/glenn.hickey/genomes/alyrata/experiments/results_sep09_FROZEN/tracks_clean_bin250.xml
+
+@attribute chromosome real
+@attribute position real
+
+% 1	<track distribution="multinomial" name="repeat_modeler" path="/data/glenn.hickey/genomes/alyrata/tracks/clean2/alyrata_repeatmodeler_clean.bed" valCol="3"/>
+@attribute repeat_modeller {None, DNA, LINE, Low, LTR, Simple, SINE, Unknown}
+
+% 2	<track distribution="multinomial" name="ltr_finder" path="/data/glenn.hickey/genomes/alyrata/tracks/clean2/alyrata_ltrfinder_clean.bed" valCol="3"/>
+@attribute ltr_finder {None, inside, LTR|left, LTR|right, TSD|left, TSD|right}
+
+% 3	<track distribution="multinomial" name="ltr_harvest" path="/data/glenn.hickey/genomes/alyrata/tracks/clean2/alyrata_ltrharvest_clean.bed" valCol="3"/>
+@attribute ltr_harvest {None, inside, LTR|left, LTR|right, TSD|left, TSD|right}
+
+% 4	<track distribution="multinomial" name="ltr_termini" path="/data/glenn.hickey/genomes/alyrata/tracks/clean2/all_scaffolds.termini_search.filter_2.ltr.sorted_clean.bed" valCol="3"/>
+@attribute ltr_termini {None, L_Term, R_Term}
+
+% 5	<track distribution="multinomial" name="tir_termini" path="/data/glenn.hickey/genomes/alyrata/tracks/clean2/all_scaffolds.termini_search.filter_2.tir.sorted_clean.bed" valCol="3"/>
+@attribute tir_termini {None, L_Term, R_Term}
+
+% 6	<track distribution="multinomial" name="irf" path="/data/glenn.hickey/genomes/alyrata/tracks/clean2/alyrata_irf_clean.bed" valCol="3"/>
+@attribute irf {None, left, right}
+
+% 7	<track distribution="multinomial" name="palindrome" path="/data/glenn.hickey/genomes/alyrata/tracks/clean/alyrata_palindrome_clean.bed" valCol="3"/>
+@attribute palindrome {None, L_Term, R_Term}
+
+% 8	<track distribution="multinomial" name="overlap" path="/data/glenn.hickey/genomes/alyrata/tracks/clean/alyrata_directoverlap_clean.bed" valCol="3"/>
+@attribute overlap {None, L_Term, R_Term}
+
+% 9	<track distribution="binary" name="mitehunter" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/mitehunter/alyrata_mitehunter.bed" valCol="0"/>
+@attribute mitehunter {0 1}
+
+% 10	<track default="0.0" distribution="gaussian" logScale="1.0475" name="cov_80-" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.cov.80-.bw" shift="1.0" valCol="3"/>
+@attribute cov_80- real
+
+% 11	<track default="0.0" distribution="gaussian" logScale="1.0457" name="left_peak_80-" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.left.80-.bw" shift="1.0" valCol="3"/>
+@attribute left_peak_80- real
+
+% 12	<track default="0.0" distribution="gaussian" logScale="1.0453" name="right_peak_80-" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.right.80-.bw" shift="1.0" valCol="3"/>
+@attribute right_peak_80- real
+
+% 13	<track default="0.0" distribution="gaussian" logScale="1.0406" name="cov_80-90" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.cov.80-90.bw" shift="1.0" valCol="3"/>
+@attribute cov_80-90 real
+
+% 14	<track default="0.0" distribution="gaussian" logScale="1.0365" name="left_peak_80-90" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.left.80-90.bw" shift="1.0" valCol="3"/>
+@attribute left_peak_80-90 real
+
+% 15	<track default="0.0" distribution="gaussian" logScale="1.0324" name="right_peak_80-90" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.right.80-90.bw" shift="1.0" valCol="3"/>
+@attribute right_peak_80-90 real
+
+% 16	<track default="0.0" distribution="gaussian" logScale="1.0329" name="cov_90+" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.cov.90+.bw" shift="1.0" valCol="3"/>
+@attribute cov_90+ real
+
+% 17	<track default="0.0" distribution="gaussian" logScale="1.0303" name="left_peak_90+" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.left.90+.bw" shift="1.0" valCol="3"/>
+@attribute left_peak_90+ real
+
+% 18	<track default="0.0" distribution="gaussian" logScale="1.0294" name="right_peak_90+" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.right.90+.bw" shift="1.0" valCol="3"/>
+@attribute right_peak_90+ real
+
+% 19	<track default="0.0" distribution="gaussian" name="cov_maxPId" path="/data/glenn.hickey/genomes/alyrata/tracks/copynum/coverage.maxPId.bw" scale="2.48" shift="0.0" valCol="3"/>
+@attribute cov_maxPId real
+
+% 20	<track distribution="multinomial" name="te_domains" path="/data/douglas.hoen/sharebrowser/tracks/alyrata/permanent/domains/TE_domains.bed" valCol="3"/>
+@attribute te_domains {None, LINE, LTR, LTR|LINE, other}
+
+% 21	<track distribution="multinomial" name="fgenesh" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_fgenesh.bed" valCol="3"/>
+@attribute fgenesh {exon, intergenic, intron, None}
+
+% 22	<track default="0.0" distribution="gaussian" logScale="1.0497" name="mrna" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_mrna.bw" shift="1.0" valCol="3"/>
+@attribute mrna real
+
+% 23	<track default="0.0" distribution="gaussian" logScale="1.046" name="srna" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_srna.bw" shift="1.0" valCol="3"/>
+@attribute srna real
+
+% 24	<track default="0.0" distribution="gaussian" name="ortho_depth" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_orthodepth.bw" scale="27.5556" shift="0.0" valCol="3"/>
+@attribute ortho_depth real
+
+%	Ignoring for now Mathieu’s comment b/c I haven’t seen “None”: “note, I'm skipping field 22, gc content, because it is numeric but contains None”
+% 25	%	<track default="0.0" distribution="gaussian" name="gcpct" path="/data/glenn.hickey/genomes/alyrata/tracks/gc/gcPercentWin20.bw" scale="2.48" shift="0.0" valCol="3"/>
+@attribute gcpct real
+
+% 26	<track distribution="binary" name="trf" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_trf.bed" valCol="0"/>
+@attribute trf {0 1}
+
+% 27	<track distribution="binary" name="dustmasker" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/dustmasker/alyrata_dustmasker.bb" valCol="0"/>
+@attribute dustmasker {0 1}
+
+% 28	<track distribution="binary" name="windowmasker" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/windowmasker/alyrata_windowmasker.bb" valCol="0"/>
+@attribute windowmasker {0 1}
+
+% 29	<track distribution="binary" name="tantan" path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/tantan/alyrata_tantan.bed" valCol="0"/>
+@attribute tantan {0 1}
+
+% 30	<track distribution="binary" name="polyA" path="/data/glenn.hickey/genomes/alyrata/tracks/singleBaseRepeats/alyrata_polya.bed" valCol="0"/>
+@attribute polyA {0 1}
+
+% 31	<track distribution="binary" name="polyN" path="/data/glenn.hickey/genomes/alyrata/tracks/singleBaseRepeats/alyrata_polyn.bed" valCol="0"/>
+@attribute polyN {0 1}
+
+% 32	<track distribution="multinomial" name="tsd" path="/data/glenn.hickey/genomes/alyrata/tracks/clean/ltr_termini_tsd.bed" valCol="3"/>
+@attribute tsd {None, L_TSD, R_TSD}
+
+
+@data

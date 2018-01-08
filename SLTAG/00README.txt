@@ -1,0 +1,1 @@
+This directory contains a sample of files (scripts, configuration files, etc.) used during an experimental implementation of a stochastic lexicalized tree-adjoining grammar (SLTAG) as a method to search for TEs in genome sequences (see esp. stag15.py).

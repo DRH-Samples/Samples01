@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Note: Revised 11-08-14 -->
+
+<teModelConfig>
+<track name="hollister"         path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/hollister/alyrata_hollister.bed"/>
+<track name="repbase"           path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/repbase-repeatmasker/alyrata_repbase_repeatmasker.bed"/>
+<track name="chaux"             path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/chaux/alyrata_chaux.bed"/>
+<track name="transposon_psi"    path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/transposonpsi/alyrata_transposonpsi.bed"/>        
+<track name="repeat_modeler"    path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/repeatmodeler/alyrata_repeatmodeler.bed"/>
+<track name="ltr_finder"        path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/ltrfinder/alyrata_ltrfinder.bed"/>
+<track name="ltr_harvest"       path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/ltrharvest/alyrata_ltrharvest.bed"/>
+<track name="irf"               path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/irf/alyrata_irf.bed"/>
+
+<!-- Note: Renamed "termini" to "ltr_termini", for consistency. -->
+<track name="ltr_termini"       path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/termini/alyrata_ltr.bed"/>
+<track name="tir_termini"       path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/termini/alyrata_tir.bed"/>
+    
+<track name="copy"              path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/copynum/alyrata_copynum.bw"     default="0.0" distribution="gaussian"/>
+<track name="copy_cv"           path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/copynum/alyrata_copycv.bw"      default="0.0" distribution="gaussian"/>
+<track name="left_peak"         path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/copynum/alyrata_leftpeak.bw"    default="0.0" distribution="gaussian"/>
+<track name="right_peak"        path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/copynum/alyrata_rightpeak.bw"   default="0.0" distribution="gaussian"/>
+
+<track name="te_domains"        path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/domains/alyrata_tedomains.bed"/>
+<track name="fgenesh"           path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_fgenesh.bed"/>  
+<track name="mrna"              path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_mrna.bw"           default="0.0" distribution="gaussian"/>
+<track name="srna"              path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_srna.bw"           default="0.0" distribution="gaussian"/>
+<track name="ortho_depth"       path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_orthodepth.bw"     default="0.0" distribution="gaussian"/>
+<track name="gcpct"             path="/data/glenn.hickey/genomes/alyrata/tracks/gc/gcPercentWin20.bw"                  default="0.0" distribution="gaussian"/>
+
+<track name="trf"               path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_trf.bed"                        distribution="binary"/>
+<track name="dustmasker"        path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/dustmasker/alyrata_dustmasker.bb"            distribution="binary"/>
+<track name="windowmasker"      path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/windowmasker/alyrata_windowmasker.bb"        distribution="binary"/>
+<track name="polyA"             path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_polya.bb"                       distribution="binary"/>
+<track name="polyN"             path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/misc/alyrata_polyn.bb"                       distribution="binary"/>
+
+<!-- Note: Changed from trf-softmasked version to unmasked version. Should make no difference? -->
+<track name="sequence"          path="/data/douglas.hoen/piatea/genomes/alyrata/sequence/alyrata_scaffolds1to8.fas"/>
+
+<!-- Note: Changed from c200 to c10 (these are PClouds parameter combinations). May or may not work better, but worth a try. -->
+<track name="p_clouds"          path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/pclouds/alyrata_pclouds_c10.bed "            distribution="binary"/>
+
+<!-- New: -->
+<!-- Question: Why do some BED tracks have distribution=binary but others do not? I have added it to the new tracks just in case. -->
+<track name="palindrome"        path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/termini/alyrata_palindrome.bed"              distribution="binary"/>
+<track name="overlap"           path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/termini/alyrata_directoverlap.bed"           distribution="binary"/>
+<track name="tantan"            path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/tantan/alyrata_tantan.bed"                   distribution="binary"/>
+<track name="repbase_censor"    path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/repbase-censor/alyrata_repbase_censor.bed"   distribution="binary"/>
+<track name="mitehunter"        path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/mitehunter/alyrata_mitehunter.bed"           distribution="binary"/>
+
+<!-- Note: Mamus/REPET was missing from the old file. Is that because it is being used for training? I add it here but comment it out, for completeness. 
+<track name="mamus"             path="/data/douglas.hoen/piatea/genomes/alyrata/tracks/mamus/alyrata_repet.bed"/>
+-->
+
+</teModelConfig>
